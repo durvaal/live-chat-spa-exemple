@@ -1,0 +1,56 @@
+.message-item {
+  position: relative;
+  margin-bottom: 10px;
+  min-width: 10%;
+  max-width: 55%;
+  width: max-content;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.message-item:first-child {
+  margin-top: 10px;
+}
+
+.message-item:not(.right)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  border-width: 0px 12px 15px 0px;
+  border-style: solid;
+  border-color: transparent white;
+}
+
+.message-author {
+  color: #555;
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+.message-content > span {
+  word-break: break-word;
+} 
+
+.message-item.right {
+  float: right;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  background-color: #dcf8c6;
+}
+
+.message-item.right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  border-width: 0px 0px 15px 12px;
+  border-style: solid;
+  border-color: transparent #dcf8c6;
+}
+
+.message-item.right .message-author {
+  display: none
+}

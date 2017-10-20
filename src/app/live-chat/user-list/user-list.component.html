@@ -1,0 +1,8 @@
+<div class="content">
+  <span class="title">Contact list</span>
+  <div class="contacts-list">
+    <div class="contact-item" [style.borderColor]="contact.color" *ngFor="let contact of contacts">
+      <app-user-item [contact]="contact"></app-user-item>
+    </div>
+  </div>
+</div>

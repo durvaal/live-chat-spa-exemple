@@ -1,0 +1,35 @@
+.feed-content{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 9vh;
+  padding: 10px 25px;
+  overflow: hidden;
+  overflow-y: auto;
+  background: linear-gradient(to bottom right, #0a88ca 0%, #33c4e4 100%);
+}
+
+.message-send {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 9vh;
+  background-color: antiquewhite;
+}
+
+.feed-content::-webkit-scrollbar {
+  width: 7px;
+}
+
+.feed-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, .33);
+}
+
+.feed-content::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, .4);
+}

@@ -1,0 +1,8 @@
+<div class="message-item" [ngClass]="{'right': message.author === username}">
+  <div class="message-author" [style.color]="message.color">
+    @{{message.author}}
+  </div>
+  <div class="message-content">
+    <span>{{message.text}}</span>
+  </div>
+</div>

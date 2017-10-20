@@ -1,0 +1,11 @@
+<div class="user-auth">
+  <div class="content">
+    <form (ngSubmit)="signIn(username.value)">
+      <div class="form-group">
+        <label for="name">Username:</label>
+        <input id="name" type="text" #username placeholder="Username" autocomplete="off">
+      </div>
+      <button type="submit" title="Sign In">Sign In</button>
+    </form>
+  </div>
+</div>

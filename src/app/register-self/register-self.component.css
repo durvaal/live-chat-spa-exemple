@@ -1,0 +1,19 @@
+.user-auth {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  margin: auto;
+  padding: 20px 10px;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}

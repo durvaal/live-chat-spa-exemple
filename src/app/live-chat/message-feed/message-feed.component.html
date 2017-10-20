@@ -1,0 +1,7 @@
+<div class="feed-content">    
+  <app-message-item *ngFor="let msg of messages"
+    [message]="msg">
+    ...
+  </app-message-item>
+</div>
+<app-message-send [user]="user" class="message-send">...</app-message-send>
